@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Stopwatch</title>
+</head>
+<body>
+    <h2>The setInterval() Method</h2>
+    <button class="button" onclick="fStart()">start</button>
+    <div id="display"></div>
+    <button class="button" onclick="fStop()">stop</button>
+
+    <script>
+        function fStart() {
+            let sec = 0;
+            let mijnInterval = setInterval(secTeller, 1000);
+        }
+
+        function fStop() {
+            clearInterval(mijnInterval)
+        }
+
+        function secTeller() {
+            sec = sec + 1;
+            document.getElementById("display").innerHTML = sec + " sec";
+        }
+    </script>
+</body>
+</html>

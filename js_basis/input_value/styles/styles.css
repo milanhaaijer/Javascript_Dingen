@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+body {
+    background-color: rgb(27, 27, 27);
+    color: white;
+    margin: 0px;
+    font-family: 'Raleway', sans-serif;
+}
+
+#container {
+    width: 80%;
+    height: 100VH;
+    margin-left: 10%;
+    display:flex;
+    flex-direction: column;
+}
+
+#header {
+    text-align:center;
+    font-size: 500%;
+    font-weight: bold;
+    padding: 60px;
+    height: 200px;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    flex:1;
+    padding: 10px;
+    font-size: 200%;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+}
+
+input[type=submit] {
+    width: 100px;
+    cursor: pointer;
+    border: none;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(174, 174, 174);
+    border: none;
+}
+
+.tekst {
+    margin-right: 20px;
+}
+
+.over {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.inputbox {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.inputachternaam {
+    padding-left: 10px;
+    padding-top: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.inputleeftijd {
+    padding-left: 10px;
+    padding-top: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.inputover {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+}
+
+.inputoverbox {
+    margin-right: 10px;
+    width: 40px;
+}
+
+#footer {
+    padding: 0px;
+}
