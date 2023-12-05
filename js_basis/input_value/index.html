@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="images/m.png">
+    <script src="script.js"></script>
     <title>Input value</title>
 </head>
 <body>
@@ -13,7 +14,7 @@
         <div id="header">
             Input Value
         </div>
-
+        <div id="output"></div>
         <div id="content">
             <div class="input">
                 <div class="tekst">
@@ -21,19 +22,19 @@
                     <div>Achternaam: </div>
                     <div>Leeftijd: </div>
                     <div class="over">over: </div>
-                    <div><input type="submit" value="Plaats tekst"></div>
+                    <div><button onclick="plaatsTekst()">Plaats Tekst</div>
                 </div>
-                <div>
-                    <div class="inputbox"><input type="text" name="voornaam" placeholder="voornaam"></div>
-                    <div class="inputachternaam"><input type="text" name="achternaam" placeholder="achternaam"></div>
-                    <div class="inputleeftijd"><input type="text" name="leeftijd" placeholder="leeftijd"></div>
-                    <div class="inputover"><input class="inputoverbox" type="text" name="over" placeholder="x"> jaar...</div>
-                </div>
+                <form id="form">
+                    <div class="inputbox"><input id="voornaam" type="text" name="voornaam" placeholder="voornaam"></div>
+                    <div class="inputachternaam"><input id="achternaam" type="text" name="achternaam" placeholder="achternaam"></div>
+                    <div class="inputleeftijd"><input id="leeftijd" type="text" name="leeftijd" placeholder="leeftijd"></div>
+                    <div class="inputover"><input id="over" name="over" type="text" placeholder="x"> jaar...</div>
+                </form>
             </div>
         </div>
 
         <div id="footer">
-            footer
+            
         </div>
     
     </div>

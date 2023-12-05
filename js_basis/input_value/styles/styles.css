@@ -22,6 +22,12 @@ body {
     height: 200px;
 }
 
+#output {
+    display: flex;
+    justify-content: center;
+    font-size: 200%
+}
+
 #content {
     display: flex;
     justify-content: center;
