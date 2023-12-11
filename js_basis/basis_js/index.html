@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div id="hideall">
+    <h2>My First JavaScript</h2>
+
+    <button type="button"
+        onclick="document.getElementById('demo').innerHTML = Date()">
+            Click me to display Date and Time.
+    </button>
+
+    <p id="demo">Hallo</p>
+
+    <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>
+        Click Me!
+    </button>
+
+    <br>
+
+    <button type="button" onclick="document.getElementById('MyImage').src='images/pic_bulbon.gif'">
+        Turn on the light
+    </button>
+
+    <img id="MyImage" src="images/pic_bulboff.gif">
+
+    <button type="button" onclick="document.getElementById('MyImage').src='images/pic_bulboff.gif'">
+        Turn off the light
+    </button>
+
+    <p id="fontsize">Hallo</p>
+
+    <button type="button" onclick="document.getElementById('fontsize').style.fontSize='40px'">
+        Change the fontsize
+    </button>
+
+    <button type="button" onclick="document.getElementById('fontsize').style.fontSize=''">
+        Change the fontsize
+    </button>
+    
+</div>
+<br>
+<button type="button" onclick="document.getElementById('hideall').style.display='none'">
+    Hide everything
+</button>
+<button type="button" onclick="document.getElementById('hideall').style.display='block'">
+    Show everything
+</button>
+</body>
+</html> 
