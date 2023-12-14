@@ -1,10 +1,19 @@
-.button {
-    margin-top: 10px;
-    margin-bottom: 10px;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+body {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(27, 27, 27);
+    color: white;
 }
 
-#display {
-    height: 30px;
-    display: flex;
-    align-items: center;
+P {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+button {
+    width: 70px;
 }
