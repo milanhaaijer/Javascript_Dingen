@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: Raleway, sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.main {
+    border: 1px solid black;
+    padding: 10px;
+    width: 600px;
+}
+
+.header {
+    margin: 0px;
+}
+
+.content {
+    display: flex;
+    
+}
+
+.content-left {
+    width: 3%;
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+.content-center {
+    width: 30%;
+}
+
+.content-right {
+    width: 67%;
+}
+
+#tussenvoegsel {
+    width: 6%;
+}
+
+#voornaam {
+    width: 42%;
+}
+
+#achternaam {
+    width: 42%;
+}
+
+#adres {
+    width: 96.5%;
+}
+
+#postcode {
+    width: 20.5%;
+}
+
+#plaats {
+    width: 73%;
+}
+
+#telefoon {
+    width: 96.5%;
+}
+
+#email {
+    width: 96.5%;
+}
+
+#opmaak {
+    width: 50%;
+}
+
+#opmaak {
+    font-style: italic;
+}

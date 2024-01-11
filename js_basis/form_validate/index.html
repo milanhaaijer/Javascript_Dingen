@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Form validate</title>
+</head>
+
+<body>
+    <div class="main">
+        <h1 class="header">Test formulier</h1>
+        <div class="content">
+            <div class="content-left">
+                *<br>*<br>*<br><br><br><br><br><br>*
+            </div>
+            <div class="content-center">
+                <label>Naam:</label><br>
+                <label>Adres:</label><br>
+                <label>PC & Plaats:</label><br>
+                <label>Telefoon:</label><br>
+                <label>Email:</label><br>
+                <label>Geslacht:</label><br><br>
+                <label>Boyband:</label><br>
+                <label>Geb.datum:</label><br>
+                <div>verplichte velden</div>
+            </div>
+            <div class="content-right">
+                <input type="text" id="voornaam" placeholder="Voornaam">
+                <input type="text" id="tussenvoegsel" placeholder="tv">
+                <input type="text" id="achternaam" placeholder="Achternaam">
+                <br>
+                <input type="text" id="adres" placeholder="Adres">
+                <br>
+                <input type="text" id="postcode" placeholder="postcode">
+                <input type="text" id="plaats" placeholder="plaats">
+                <br>
+                <input type="text" id="telefoon" placeholder="Telefoonnummer">
+                <br>
+                <input type="text" id="email" placeholder="Email-adres">
+                <br>
+                <input type="radio" name="gender">Vrouw<br>
+                <input type="radio" name="gender">Man
+                <br>
+                <select name="boyband">
+                    <option value="k3guys">K3 Guys</option>
+                    <option value="beatles">The Beatles</option>
+                    <option value="beachboys">The Beach Boys</option>
+                </select>
+                <br>
+                <input type="text" id="geboortedatum">
+                <label for="geboortedatum" id="opmaak">Opmaak: "dd-mm-jjjj"</label>
+                <button type="button">Verstuur</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
