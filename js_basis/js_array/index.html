@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Array</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <hr>
+    <form id="addCarForm">
+        <label for="carInput">Car:</label>
+        <input id="carInput"><br>
+        <lavel for="pricInput">Price:</lavel>
+        <input id="priceInput"><br>
+        <button type="button" onclick="addItem()">Add</button>
+    </form>
+    <hr>
+    <div id="total"></div>
+
+    <script>
+        let cars = ["Saab", "Volvo", "BWM", "Audi"];
+        let prices = [17000, 22000, 21000, 26500];
+        let text = "";
+        let sum = 0;
+
+
+        function addItem() {
+            let carInput = document.getElementById('carInput');
+            let priceInput = document.getElementById('priceInput');
+            let newPrice = priceInput.value.trim();
+            newPrice = parseInt(newPrice);
+            let newCar = carInput.value.trim();
+            cars.push(newCar);
+            prices.push(newPrice);
+
+            displayItem();
+            carInput.value = '';
+            priceInput.value = '';
+        }
+
+        function displayItem() {
+            text = '';
+            for (let i = 0; i < cars.length; i++) {
+                text += "De " + cars[i] + " kost " + "€" + prices[i] + "<br>";
+            }
+            document.getElementById("demo").innerHTML = text;
+
+            for (let j = 0; j < prices.length; j++) {
+                sum += prices[j];
+            }
+            document.getElementById("total").innerHTML = "De totaalprijs van alle autos is: €" + sum;
+        }
+
+        displayItem();
+    </script>
+</body>
+
+
+</html>
