@@ -6,7 +6,6 @@ function formValidate(elem) {
 function checkFields() {
     let inputs = document.querySelectorAll("#content input");
     let messagesbox = document.querySelector("#warning #messages");
-    console.log(messagesbox);
     messagesbox.innerHTML = "";
     document.querySelector("#warning").style.display = "none";
     for (let index = 0; index < inputs.length; index++) {
@@ -18,5 +17,4 @@ function checkFields() {
             messagesbox.appendChild(elem);
         }
     }
-
 }
