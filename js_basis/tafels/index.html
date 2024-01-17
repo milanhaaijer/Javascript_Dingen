@@ -3,9 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
     <title>Tafels</title>
 </head>
 <body>
-    
+    <h1>Tafels</h1>
+    <form>
+        <label for="numberInput">Geef getal voor tafel: </label><input type="text" id="numberInput"><br>
+        <label for="startInput">Geef getal voor begin: </label><input type="text" id="startInput"><br>
+        <label for="endInput">Geef getal voor einde: </label><input type="text" id="endInput"><br>
+        <button type="button" onclick="tafelGenerator()">Geef de tafel</button>
+    </form>
+    <div id="output"></div>
 </body>
 </html>
